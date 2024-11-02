@@ -6,8 +6,8 @@
 <script type="text/javascript">function getParameterByName(name) { name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), results = regex.exec(location.search); return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));}
 var embed = getParameterByName('embed') || getParameterByName('r') || false;
 window.onload = function() { if (embed) { const privateLink = atob(embed); // Decodificar el link encriptado if (privateLink.includes('/e/')) { const dominio = 'https://hlswish.com/e/'; const andresvpn = privateLink.split('/e/')[1]; const fullmovie = dominio + andresvpn; document.querySelector('.video-responsive').innerHTML = '<iframe frameborder="0" allow="encrypted-media" sandbox="allow-scripts" allowfullscreen src="' + fullmovie + '"></iframe>'; } else { document.querySelector('.video-responsive').innerHTML = '<iframe frameborder="0" allow="encrypted-media" sandbox="allow-scripts" allowfullscreen src="' + privateLink + '"></iframe>'; } } else { document.querySelector('.video-responsive').innerHTML = '<img class="embed-responsive-item" src="https://telegra.ph/file/7af07da609c73477db23f.jpg">'; mostrarMensaje("No se ha encontrado un video para mostrar."); }}
-function mostrarMensaje(texto) { var mensajeDiv = document.getElementById('mensaje'); mensajeDiv.innerHTML = texto; http://mensajediv.style/.display = 'block';
-setTimeout(function() { http://mensajediv.style/.display = 'none'; }, 5000);}</script></head><body>
+function mostrarMensaje(texto) { var mensajeDiv = document.getElementById('mensaje'); mensajeDiv.innerHTML = texto; mensajediv.style/.display = 'block';
+setTimeout(function() { mensajediv.style/.display = 'none'; }, 5000);}</script></head><body>
 <!-- Contenedor para mostrar mensajes --><div id="mensaje"></div>
 <!-- Contenedor del video --><div class="video-responsive"></div>
 </body></html>
